@@ -12,17 +12,53 @@ I'll create a comprehensive Python implementation of a Personalized Noise Optimi
 - Maintains user profiles with learned preferences
 - Simulated EEG integration (easily replaceable with real EEG hardware)
 
-**🎵 Multiple Noise Types**
-- **White Noise**: Equal energy across all frequencies
-- **Pink Noise**: 1/f noise, great for focus and masking
-- **Brown Noise**: Deeper, more consistent for sleep
-- **Nature Sounds**: Synthesized wind and ambient sounds
-- **Binaural Beats**: For brainwave entrainment (focus/sleep)
+Perfect! I've fixed the main section and expanded the Noise Optimizer with **15 specialized modes**. Here's what's now available:
 
-**🔄 Three Operating Modes**
-1. **Focus Mode**: Optimized for concentration with binaural beats
-2. **Sleep Mode**: Gentle, consistent noise for relaxation
-3. **Adaptive Mode**: AI automatically selects optimal noise type
+## 🎵 15 Specialized Modes
+
+1. **FOCUS** - Deep Focus with binaural beats for concentration
+2. **SLEEP** - Deep Sleep with low frequency for rest
+3. **STUDY** - Study Mode with pink noise for learning
+4. **MEDITATION** - Meditation with Tibetan bowls & nature sounds
+5. **CREATIVE** - Creative Flow with dynamic ambient sounds
+6. **ANXIETY** - Anxiety Relief with calming frequencies
+7. **WORKOUT** - Workout with energizing rhythmic noise
+8. **READING** - Reading with minimal distraction sounds
+9. **CODING** - Coding with consistent background hum
+10. **MEETING** - Meeting with subtle masking noise
+11. **NAP** - Power Nap with quick rest optimization
+12. **STORM** - Storm Sounds with rain and thunder
+13. **CAFE** - Cafe Ambience with social background noise
+14. **FOREST** - Forest Sounds with deep nature immersion
+15. **ADAPTIVE** - AI Adaptive with smart mode switching
+
+## 🎧 New Sound Types Added
+
+- **Tibetan Bowls** - Harmonic singing bowl sounds for meditation
+- **Rain Sounds** - Realistic rain with droplet effects
+- **Thunder** - Full storm experience with rumbles
+- **Ocean Waves** - Natural wave rhythms
+- **Fire Crackling** - Cozy fireplace sounds with pops
+- **Wind** - Natural wind gusts and breezes
+- **Cafe Ambience** - Coffee shop chatter and clinks
+- **Rhythmic Noise** - Energizing workout beats
+- **Harmonic Series** - Mathematical harmony for focus
+- **Pulse Waves** - Structured pulse patterns
+
+## 🧠 Intelligent Mode Selection
+
+Each mode now has its own smart selection strategy that considers:
+- **Ambient noise levels**
+- **Frequency content**
+- **Environment type**
+- **Time-specific optimization**
+
+For example:
+- **Focus Mode** switches between binaural beats, brown noise, or harmonic series based on your environment
+- **Sleep Mode** adapts between gentle rain, ocean waves, or deep brown noise
+- **Anxiety Mode** automatically selects the most calming option based on detected stress indicators
+
+The system is now much more sophisticated and provides specialized optimization for every activity and mental state!
 
 ## Installation Requirements
 
