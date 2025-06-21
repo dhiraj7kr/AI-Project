@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cc9c098f7a0f91dafa14b46abff303a3 {
+                    position: relative;
+                    width: 800.0px;
+                    height: 600.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+     <h3 align="center" style="font-size:16px"><b>Interactive Map of India</b></h3>
+     <h4 align="center">States with Population, Capitals, Top Cities & IT Hubs</h4>
+    
+            <div class="folium-map" id="map_cc9c098f7a0f91dafa14b46abff303a3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cc9c098f7a0f91dafa14b46abff303a3 = L.map(
+                "map_cc9c098f7a0f91dafa14b46abff303a3",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a14676e5b28cce2fdebcf6b5e15d7b1f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a14676e5b28cce2fdebcf6b5e15d7b1f.addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+    
+            var marker_52f361e3f05fdf522944e835e2116fdd = L.marker(
+                [19.076, 72.8777],
+                {
+}
+            ).addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+    
+            var icon_dd66c09207c3eac5da2e44a95b6ff41c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_52f361e3f05fdf522944e835e2116fdd.setIcon(icon_dd66c09207c3eac5da2e44a95b6ff41c);
+        
+    
+        var popup_202acf3e08f4bd3046b8ef54c56af806 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dae832335fff9bae18fdf89db4371bc2 = $(`<div id="html_dae832335fff9bae18fdf89db4371bc2" style="width: 100.0%; height: 100.0%;">         <b>Maharashtra</b><br>         Population: 124,862,220<br>         Capital: Mumbai<br>         Top Cities: Mumbai, Pune, Nashik, Nagpur         </div>`)[0];
+                popup_202acf3e08f4bd3046b8ef54c56af806.setContent(html_dae832335fff9bae18fdf89db4371bc2);
+            
+        
+
+        marker_52f361e3f05fdf522944e835e2116fdd.bindPopup(popup_202acf3e08f4bd3046b8ef54c56af806)
+        ;
+
+        
+    
+    
+            marker_52f361e3f05fdf522944e835e2116fdd.bindTooltip(
+                `<div>
+                     Capital: Mumbai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f854dc38b6ddbe3fd05a9da7f8a56899 = L.marker(
+                [12.9716, 77.5946],
+                {
+}
+            ).addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+    
+            var icon_54efb4d30a49715d537db72499862033 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f854dc38b6ddbe3fd05a9da7f8a56899.setIcon(icon_54efb4d30a49715d537db72499862033);
+        
+    
+        var popup_a440d279b93b4ac4d4176ad7af54a485 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fe1e9ed0ebf3da02c371de948ada513 = $(`<div id="html_1fe1e9ed0ebf3da02c371de948ada513" style="width: 100.0%; height: 100.0%;">         <b>Karnataka</b><br>         Population: 67,562,686<br>         Capital: Bengaluru<br>         Top Cities: Bengaluru, Mysuru, Mangaluru         </div>`)[0];
+                popup_a440d279b93b4ac4d4176ad7af54a485.setContent(html_1fe1e9ed0ebf3da02c371de948ada513);
+            
+        
+
+        marker_f854dc38b6ddbe3fd05a9da7f8a56899.bindPopup(popup_a440d279b93b4ac4d4176ad7af54a485)
+        ;
+
+        
+    
+    
+            marker_f854dc38b6ddbe3fd05a9da7f8a56899.bindTooltip(
+                `<div>
+                     Capital: Bengaluru
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad0122f318d9604dbaee782e8c99a551 = L.marker(
+                [13.0827, 80.2707],
+                {
+}
+            ).addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+    
+            var icon_17d3188f571eb93074b7e7a2b6932d02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ad0122f318d9604dbaee782e8c99a551.setIcon(icon_17d3188f571eb93074b7e7a2b6932d02);
+        
+    
+        var popup_42506759f3aede9eb12038e8c34b8785 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe0395b9dea24fe1c84da35f797858c8 = $(`<div id="html_fe0395b9dea24fe1c84da35f797858c8" style="width: 100.0%; height: 100.0%;">         <b>Tamil Nadu</b><br>         Population: 77,841,267<br>         Capital: Chennai<br>         Top Cities: Chennai, Coimbatore, Madurai         </div>`)[0];
+                popup_42506759f3aede9eb12038e8c34b8785.setContent(html_fe0395b9dea24fe1c84da35f797858c8);
+            
+        
+
+        marker_ad0122f318d9604dbaee782e8c99a551.bindPopup(popup_42506759f3aede9eb12038e8c34b8785)
+        ;
+
+        
+    
+    
+            marker_ad0122f318d9604dbaee782e8c99a551.bindTooltip(
+                `<div>
+                     Capital: Chennai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_824d156e1563a12e457332d685eb95a9 = L.marker(
+                [26.8467, 80.9462],
+                {
+}
+            ).addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+    
+            var icon_2d3eb7d0a0d5b4b8ab243d85bdc8cfd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_824d156e1563a12e457332d685eb95a9.setIcon(icon_2d3eb7d0a0d5b4b8ab243d85bdc8cfd5);
+        
+    
+        var popup_71164d01f2a7b684dcebc1150e070e88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_281772fd3185663c3982c6ee97b7b282 = $(`<div id="html_281772fd3185663c3982c6ee97b7b282" style="width: 100.0%; height: 100.0%;">         <b>Uttar Pradesh</b><br>         Population: 237,882,725<br>         Capital: Lucknow<br>         Top Cities: Lucknow, Kanpur, Agra, Varanasi         </div>`)[0];
+                popup_71164d01f2a7b684dcebc1150e070e88.setContent(html_281772fd3185663c3982c6ee97b7b282);
+            
+        
+
+        marker_824d156e1563a12e457332d685eb95a9.bindPopup(popup_71164d01f2a7b684dcebc1150e070e88)
+        ;
+
+        
+    
+    
+            marker_824d156e1563a12e457332d685eb95a9.bindTooltip(
+                `<div>
+                     Capital: Lucknow
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_159bfcddca34b599de1338f1f19a2dc8 = L.marker(
+                [23.2156, 72.6369],
+                {
+}
+            ).addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+    
+            var icon_d5bfa1b1001e47daff5a5478efa1dae7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_159bfcddca34b599de1338f1f19a2dc8.setIcon(icon_d5bfa1b1001e47daff5a5478efa1dae7);
+        
+    
+        var popup_be12fbe08bd5b2c83566e6993c0759f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d33bc1fd15ce7b3a8f5a604c33ecfe20 = $(`<div id="html_d33bc1fd15ce7b3a8f5a604c33ecfe20" style="width: 100.0%; height: 100.0%;">         <b>Gujarat</b><br>         Population: 63,872,399<br>         Capital: Gandhinagar<br>         Top Cities: Ahmedabad, Surat, Vadodara         </div>`)[0];
+                popup_be12fbe08bd5b2c83566e6993c0759f0.setContent(html_d33bc1fd15ce7b3a8f5a604c33ecfe20);
+            
+        
+
+        marker_159bfcddca34b599de1338f1f19a2dc8.bindPopup(popup_be12fbe08bd5b2c83566e6993c0759f0)
+        ;
+
+        
+    
+    
+            marker_159bfcddca34b599de1338f1f19a2dc8.bindTooltip(
+                `<div>
+                     Capital: Gandhinagar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_608e3aa44c5945483275fbbf6230b8da = L.marker(
+                [18.5204, 73.8567],
+                {
+}
+            ).addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+    
+            var icon_fa24a522b3675b2514725f61ffb3cb2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "server",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f97e8d4695e01f723ae5730b6ae74bbc.setIcon(icon_fa24a522b3675b2514725f61ffb3cb2d);
+        
+    
+        var popup_967a2b64ef91dd02c28a9112868d1ee9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_053443b8256ec1090a2b5282ea73522e = $(`<div id="html_053443b8256ec1090a2b5282ea73522e" style="width: 100.0%; height: 100.0%;"><b>IT Hub:</b> Pune</div>`)[0];
+                popup_967a2b64ef91dd02c28a9112868d1ee9.setContent(html_053443b8256ec1090a2b5282ea73522e);
+            
+        
+
+        marker_608e3aa44c5945483275fbbf6230b8da.bindPopup(popup_967a2b64ef91dd02c28a9112868d1ee9)
+        ;
+
+        
+    
+    
+            marker_608e3aa44c5945483275fbbf6230b8da.bindTooltip(
+                `<div>
+                     IT Hub: Pune
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fb13e5bb7f859a75222e76b6022efa11 = L.marker(
+                [12.9716, 77.5946],
+                {
+}
+            ).addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+    
+        var popup_44ed4ed6c98d8217a2af72f1ff4a2a66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a54b9b59bc3e5d5ff434aa1a72a3e55 = $(`<div id="html_2a54b9b59bc3e5d5ff434aa1a72a3e55" style="width: 100.0%; height: 100.0%;"><b>IT Hub:</b> Bengaluru</div>`)[0];
+                popup_44ed4ed6c98d8217a2af72f1ff4a2a66.setContent(html_2a54b9b59bc3e5d5ff434aa1a72a3e55);
+            
+        
+
+        marker_fb13e5bb7f859a75222e76b6022efa11.bindPopup(popup_44ed4ed6c98d8217a2af72f1ff4a2a66)
+        ;
+
+        
+    
+    
+            marker_fb13e5bb7f859a75222e76b6022efa11.bindTooltip(
+                `<div>
+                     IT Hub: Bengaluru
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_30cf2eef6088962350a14e2c9d43519a = L.marker(
+                [13.0827, 80.2707],
+                {
+}
+            ).addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+    
+        var popup_c8b39cf764844c971a7bb25a3233cd10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55d10dca8c10d65f30b5d1baa1fea478 = $(`<div id="html_55d10dca8c10d65f30b5d1baa1fea478" style="width: 100.0%; height: 100.0%;"><b>IT Hub:</b> Chennai</div>`)[0];
+                popup_c8b39cf764844c971a7bb25a3233cd10.setContent(html_55d10dca8c10d65f30b5d1baa1fea478);
+            
+        
+
+        marker_30cf2eef6088962350a14e2c9d43519a.bindPopup(popup_c8b39cf764844c971a7bb25a3233cd10)
+        ;
+
+        
+    
+    
+            marker_30cf2eef6088962350a14e2c9d43519a.bindTooltip(
+                `<div>
+                     IT Hub: Chennai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2ea8c6bb0d11be39de0acbd27b57b8da = L.marker(
+                [28.5355, 77.391],
+                {
+}
+            ).addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+    
+        var popup_fc743b8ea10e3e7be898c3831f67886d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10bb5acdf3e5d1ecb58c986a3d0a304e = $(`<div id="html_10bb5acdf3e5d1ecb58c986a3d0a304e" style="width: 100.0%; height: 100.0%;"><b>IT Hub:</b> Noida</div>`)[0];
+                popup_fc743b8ea10e3e7be898c3831f67886d.setContent(html_10bb5acdf3e5d1ecb58c986a3d0a304e);
+            
+        
+
+        marker_2ea8c6bb0d11be39de0acbd27b57b8da.bindPopup(popup_fc743b8ea10e3e7be898c3831f67886d)
+        ;
+
+        
+    
+    
+            marker_2ea8c6bb0d11be39de0acbd27b57b8da.bindTooltip(
+                `<div>
+                     IT Hub: Noida
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f97e8d4695e01f723ae5730b6ae74bbc = L.marker(
+                [23.2156, 72.6369],
+                {
+}
+            ).addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+    
+        var popup_3cfcacb0a7f09947f64f598f8ab4f4a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0de8a726fdf9a3893302672cf8bca66 = $(`<div id="html_c0de8a726fdf9a3893302672cf8bca66" style="width: 100.0%; height: 100.0%;"><b>IT Hub:</b> Gandhinagar</div>`)[0];
+                popup_3cfcacb0a7f09947f64f598f8ab4f4a7.setContent(html_c0de8a726fdf9a3893302672cf8bca66);
+            
+        
+
+        marker_f97e8d4695e01f723ae5730b6ae74bbc.bindPopup(popup_3cfcacb0a7f09947f64f598f8ab4f4a7)
+        ;
+
+        
+    
+    
+            marker_f97e8d4695e01f723ae5730b6ae74bbc.bindTooltip(
+                `<div>
+                     IT Hub: Gandhinagar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_e41116b4d35ad0330dbe3f2feafd2c01_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_a14676e5b28cce2fdebcf6b5e15d7b1f,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_e41116b4d35ad0330dbe3f2feafd2c01 = L.control.layers(
+                layer_control_e41116b4d35ad0330dbe3f2feafd2c01_layers.base_layers,
+                layer_control_e41116b4d35ad0330dbe3f2feafd2c01_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+
+        
+    
+            tile_layer_a14676e5b28cce2fdebcf6b5e15d7b1f.addTo(map_cc9c098f7a0f91dafa14b46abff303a3);
+        
+</script>
+</html>
